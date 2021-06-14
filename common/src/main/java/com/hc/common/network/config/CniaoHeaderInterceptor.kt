@@ -105,6 +105,7 @@ class CniaoHeaderInterceptor : Interceptor {
         attachHeaders.forEach { newBuilder.header(it.first, it.second) }
         newBuilder.header("sign", EncryptUtils.encryptMD5ToString(signValue))
 
+        //拦截器，生成新的 REQUEST  .
         if (originRequest.method == "POST" && requestBody != null) {
             newBuilder.post(requestBody)
         } else if (originRequest.method == "GET") {

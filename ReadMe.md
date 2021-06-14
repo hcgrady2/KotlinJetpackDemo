@@ -1,8 +1,6 @@
 ### 一、
 参考： github
 
-
-
 [1、Jetpack 介绍](./Jetpack.md)
 
 [2、Kotlin 入门](./Kotlin.md)
@@ -31,7 +29,47 @@ token 机制 、 时间戳 、 签名机制（每个签名只使用一次）
 appid、version 、platform 、system 、branc、model 、uuid、network、sign、timestamp、token 。、
 
 状态码：
- 
+
+
+ 用自己的账号密码有 token
+ 18648957777
+ cn5123456
+
+#### 2、 依赖注入框架
+面向切面的。解耦的。常用的依赖注入框架，dagger2、hilt 、 koin 。
+koin 使用：
++ 业务class 创建
++ 定义 koin 容器模块 module，内部声明类的创建（单例、工厂）
++ 在 application 里面调用 startKoin 里面初始化 module 。
+
+
+关键函数符好：
++ startKoin
++ module
++ single
++ fragtory
++ viewmodel
+
+
+
+#### 3、插件化  组件化、模块化
+模块，可以理解为解耦，按照功能分包、解耦，或者使用 module 。
+
+组件，可能是更高的抽象，有模块组成。可能是在模块化之上，进行组件化。
+
+组件化是纵向分层，模块化是横向分层。
+
+插件化更关注动态加载、热更新、热修复等插拔技术。
+
+插件化开源的方案： 阿里的 atlas 、 360 的  RePlugin 、滴滴的  VirtualAPK 。
+
+
+
+#### 4、项目模块划分
+基于 ARrouter  来实现组件化。
+Service 介于 app 和 common 之间。
+
+
 
 
 

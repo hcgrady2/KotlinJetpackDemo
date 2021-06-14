@@ -36,8 +36,8 @@ object KtRetrofit {
 
 
     private val retrofitBuilder = Retrofit.Builder()
-        .addConverterFactory(GsonConverterFactory.create())
-        .addCallAdapterFactory(LiveDataCallAdapterFactory())
+        .addConverterFactory(GsonConverterFactory.create())  //GSON
+        .addCallAdapterFactory(LiveDataCallAdapterFactory()) //支持 LiveData
         .client(mOkClient)
 
 
@@ -47,7 +47,6 @@ object KtRetrofit {
      * 初始化配置
      * [baseUrl]项目接口的基类url，以/结尾
      */
-
     fun initConfig(baseUrl: String, okClient: OkHttpClient = mOkClient): KtRetrofit {
         retrofit = retrofitBuilder.baseUrl(baseUrl)
             .client(okClient)

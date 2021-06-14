@@ -135,6 +135,8 @@ dependencies {
 
     //ARouter
     implementation 'com.alibaba:arouter-api:1.5.0'
+
+    //kapt  是 kt 里面的，相当于 java 了的 annotationProcess
     kapt 'com.alibaba:arouter-compiler:1.2.2'
     //liveData eventBus
     implementation 'com.jeremyliao:live-event-bus-x:1.7.2'

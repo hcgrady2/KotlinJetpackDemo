@@ -25,6 +25,7 @@ import java.util.concurrent.TimeUnit
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 
+//私有构造函数
 class OkHttpApi private constructor() : HttpApi {
 
 
@@ -91,7 +92,7 @@ class OkHttpApi private constructor() : HttpApi {
 
         val request = Request.Builder()
             .get()
-            .tag(params)
+            .tag(params)  //打 tag，用于取消。
             .url(urlBuilder.build())
             .cacheControl(CacheControl.FORCE_NETWORK)
             .build()

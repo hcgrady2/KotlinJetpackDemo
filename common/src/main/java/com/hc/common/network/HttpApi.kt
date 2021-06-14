@@ -39,6 +39,7 @@ interface HttpApi {
     fun postSync(body: Any, urlStr: String): Any? = Any()
 
 
+    //取消机制，请求管理，okttp 里面支持。
     fun cancelRequest(tag: Any)
 
     fun cancelAllRequest()
