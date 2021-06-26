@@ -51,6 +51,9 @@ class SingleLiveData<T> : MutableLiveData<T>() {
         super.postValue(value)
     }
 
+    /**
+     * 赋值空值
+     */
     @MainThread
     fun call() {
         value = null

@@ -15,6 +15,9 @@ class AbsentLiveData<T:Any?> private constructor():LiveData<T>(){
          postValue(null)
      }
 
+    /**
+     * 伴生类
+     */
     companion object{
         fun <T:Any?> create():LiveData<T>{
             return AbsentLiveData()

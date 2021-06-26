@@ -24,7 +24,7 @@ abstract class BaseApplication : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        //koin的注解使用
+        //koin的注解使用 ，支持模块化和组件化
         startKoin{
             androidLogger(Level.ERROR)//目前已知bug，除了level.error外，使用androidlogger会导致崩溃
             //context

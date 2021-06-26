@@ -69,7 +69,40 @@ koin 使用：
 基于 ARrouter  来实现组件化。
 Service 介于 app 和 common 之间。
 
+##### Common 模块包含基础组件
++ Network 、DB
++ Log 、Utils
++ upgreate
++ crashReport、Hotfix
++ baseUI 、 widget
++ Router、EventBus
++ Share 、 ImageLoader
++ WebView
++ push 、permission
++ security
 
+##### 常用的开源库
++ ARouter 、Atlas 、CC
++ Koin 、Hilt/dagger
++ EasyPermission
++ Vacsonic 、AgentWeb （WebView 框架）
++ Gson
++ Glide
++ Retrofit/okhttp/okgo
++ Lottie
++ LeackCanery 、Dokit
++ Zing/Zbar
++ Sophix、TinkerPathc
++ Jeptack
++ Logger、Timber、Hugo
++ vLayout、tangram
++ Luban
++ banner
+
+
+todo:
+1、四個  fragment 集成
+2、dokit 集成。
 
 
 
