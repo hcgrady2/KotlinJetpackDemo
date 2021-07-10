@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply from: '../dependencies.gradle'
+apply plugin: 'com.didi.dokit' //dokit
 
 android {
     compileSdkVersion 29
@@ -31,22 +33,23 @@ android {
     }
 }
 
-dependencies {
-    implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.3.2'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.2.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation 'androidx.navigation:navigation-fragment:2.3.2'
-    implementation 'androidx.navigation:navigation-ui:2.3.2'
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.2'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.3.2'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    //te
-    //test
 
+dependencies {
+    //from dependencies.gradle
+
+    //根据是否独立运行，将模块作为apk还是module
+    if (!singleModule.toBoolean()) { //如果其他模块不是作为app运行的话
+        //其它模块作为app运行的话，就不能依赖库作为lib用
+        implementation project(path: ':mine')
+        implementation project(path: ':course')
+        implementation project(path: ':study')
+        implementation project(path: ':home')
+        implementation project(path: ':login')
+    }
+    implementation project(path: ':service')
+    //今日头条的适配方案
+    implementation 'me.jessyan:autosize:1.2.1'
 }
+
+
+

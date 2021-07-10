@@ -1,5 +1,6 @@
 package com.hc.common.utils;
 
+import com.hc.common.BuildConfig
 
 
 /**

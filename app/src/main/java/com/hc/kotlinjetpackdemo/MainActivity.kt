@@ -3,13 +3,13 @@ package com.hc.kotlinjetpackdemo
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.cniao5.cainiaowo.databinding.ActivityMainBinding
-import com.cniao5.common.base.BaseActivity
-import com.cniao5.common.widget.BnvVp2Mediator
-import com.cniao5.course.ui.CourseFragment
-import com.cniao5.home.ui.HomeFragment
-import com.cniao5.mine.MineContainerFragment
-import com.cniao5.study.ui.StudyFragment
+import com.hc.common.base.BaseActivity
+import com.hc.common.widget.BnvVp2Mediator
+import com.hc.course.ui.CourseFragment
+import com.hc.home.ui.HomeFragment
+import com.hc.kotlinjetpackdemo.databinding.ActivityMainBinding
+import com.hc.mine.ui.MineContainerFragment
+import com.hc.study.ui.StudyFragment
 
 /*
 * App主工程的入口界面
