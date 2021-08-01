@@ -3,13 +3,13 @@ package com.hc.kotlinjetpackdemo
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.cniao5.cainiaowo.databinding.ActivityMainBinding
-import com.cniao5.common.base.BaseActivity
-import com.cniao5.common.widget.BnvVp2Mediator
-import com.cniao5.course.ui.CourseFragment
-import com.cniao5.home.ui.HomeFragment
-import com.cniao5.mine.MineContainerFragment
-import com.cniao5.study.ui.StudyFragment
+import com.hc.common.base.BaseActivity
+import com.hc.common.widget.BnvVp2Mediator
+import com.hc.kotlinjetpackdemo.databinding.ActivityMainBinding
+import com.hc.kotlinjetpackdemo.ui.dashboard.DashboardFragment
+import com.hc.kotlinjetpackdemo.ui.home.HomeFragment
+import com.hc.kotlinjetpackdemo.ui.notifications.NotificationsFragment
+
 
 /*
 * App主工程的入口界面
@@ -23,9 +23,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     //将Fragment改为ReFragment，  此时Fragment UI不可见就销毁，但保存数据
     private val fragments = mapOf<Int, ReFragment>(
         INDEX_HOME to { HomeFragment() },
-        INDEX_COURSE to { CourseFragment() },
-        INDEX_STUDY to { StudyFragment() },
-        INDEX_MINE to { MineContainerFragment() }
+        INDEX_COURSE to { DashboardFragment() },
+        INDEX_STUDY to { HomeFragment() },
+        INDEX_MINE to { NotificationsFragment() }
     )
 
     override fun initConfig() {

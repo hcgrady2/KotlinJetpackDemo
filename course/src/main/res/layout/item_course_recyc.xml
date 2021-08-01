@@ -7,11 +7,11 @@
 
         <import type="android.view.View" />
 
-        <import type="com.cniao5.course.utils.CourseUtils" />
+        <import type="com.hc.course.utils.CourseUtils" />
 
         <variable
             name="info"
-            type="com.cniao5.course.net.CourseListRsp.Data" />
+            type="com.hc.course.net.CourseListRsp.Data" />
     </data>
 
     <androidx.cardview.widget.CardView
@@ -34,7 +34,10 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@{info.imgUrl}"
+
+                android:src="@{info.imgUrl}"
+
+
                 tools:srcCompat="@drawable/img_course" />
 
             <androidx.appcompat.widget.AppCompatTextView

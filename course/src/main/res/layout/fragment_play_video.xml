@@ -7,11 +7,11 @@
 
         <variable
             name="info"
-            type="com.cniao5.course.net.CourseListRsp.Data" />
+            type="com.hc.course.net.CourseListRsp.Data" />
 
         <variable
             name="vm"
-            type="com.cniao5.course.PlayVideoViewModel" />
+            type="com.hc.course.PlayVideoViewModel" />
 
     </data>
 

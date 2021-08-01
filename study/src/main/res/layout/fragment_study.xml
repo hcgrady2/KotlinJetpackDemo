@@ -4,10 +4,10 @@
 
     <data>
 
-        <import type="com.cniao5.study.utils.StudyUtils"/>
+        <import type="com.hc.study.utils.StudyUtils"/>
         <variable
             name="vm"
-            type="com.cniao5.study.StudyViewModel" />
+            type="com.hc.study.StudyViewModel" />
 
     </data>
 
@@ -31,7 +31,7 @@
             app:layout_constraintStart_toStartOf="@id/v_top_bg_study"
             app:layout_constraintTop_toTopOf="@id/v_top_bg_study"
             app:shapeAppearanceOverlay="@style/circleImageStyle"
-            app:srcCompat="@{vm.obUserInfo.logo_url}"
+            android:src="@{vm.obUserInfo.logo_url}"
             tools:srcCompat="@drawable/icon_default_header"
         />
 

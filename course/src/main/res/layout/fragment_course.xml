@@ -6,7 +6,7 @@
     <data>
         <variable
             name="vm"
-            type="com.cniao5.course.CourseViewModel" />
+            type="com.hc.course.CourseViewModel" />
 
     </data>
 

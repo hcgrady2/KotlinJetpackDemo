@@ -7,9 +7,9 @@
 
         <variable
             name="info"
-            type="com.cniao5.study.net.StudiedRsp.Data" />
+            type="com.hc.study.net.StudiedRsp.Data" />
 
-        <import type="com.cniao5.study.utils.StudyUtils"/>
+        <import type="com.hc.study.utils.StudyUtils"/>
 
     </data>
 
@@ -36,7 +36,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@drawable/img_course"
-                app:srcCompat="@{StudyUtils.parseImage(info)}"
+                android:src="@{StudyUtils.parseImage(info)}"
                 />
 
             <androidx.appcompat.widget.AppCompatTextView
