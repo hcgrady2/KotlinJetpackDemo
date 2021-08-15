@@ -1,13 +1,10 @@
+
+package com.hc.service
+
 import com.hc.common.network.KtRetrofit
 import org.koin.dsl.module
 
-/**
- *
- * @author:        Created by hc
- * @date:          Create in 14:58 2021/8/1
- * @description:
- *
- */
+
 
 /*
 * Service模块相关的koin的module配置

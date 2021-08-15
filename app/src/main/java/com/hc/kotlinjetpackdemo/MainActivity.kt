@@ -5,10 +5,11 @@ import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.hc.common.base.BaseActivity
 import com.hc.common.widget.BnvVp2Mediator
+import com.hc.course.ui.CourseFragment
+import com.hc.home.ui.HomeFragment
 import com.hc.kotlinjetpackdemo.databinding.ActivityMainBinding
-import com.hc.kotlinjetpackdemo.ui.dashboard.DashboardFragment
-import com.hc.kotlinjetpackdemo.ui.home.HomeFragment
-import com.hc.kotlinjetpackdemo.ui.notifications.NotificationsFragment
+import com.hc.mine.MineContainerFragment
+import com.hc.study.ui.StudyFragment
 
 
 /*
@@ -23,9 +24,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     //将Fragment改为ReFragment，  此时Fragment UI不可见就销毁，但保存数据
     private val fragments = mapOf<Int, ReFragment>(
         INDEX_HOME to { HomeFragment() },
-        INDEX_COURSE to { DashboardFragment() },
-        INDEX_STUDY to { HomeFragment() },
-        INDEX_MINE to { NotificationsFragment() }
+        INDEX_COURSE to { CourseFragment() },
+        INDEX_STUDY to { StudyFragment() },
+        INDEX_MINE to { MineContainerFragment() }
     )
 
     override fun initConfig() {

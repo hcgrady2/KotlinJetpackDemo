@@ -84,6 +84,17 @@ abstract  class BaseFragment: Fragment { //Fragment()表示主构造函数
     }
 
 
+    /*
+    * 扩展liveData的observer函数
+    * livedata回传回来的数据可能为null
+    * 不用写viewLifecycleOwner
+    * */
+    protected fun <T: Any?> LiveData<T>.observeKt(block:(T?) -> Unit) {
+        this.observe(viewLifecycleOwner, Observer { data ->
+            // block.invoke(data)
+            block(data)
+        })
+    }
 
 
 }

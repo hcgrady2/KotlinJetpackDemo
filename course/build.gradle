@@ -17,7 +17,7 @@ android {
 }
 dependencies {
     implementation project(path:':service')
-    //from dependencies.gradle //test
+
 
     //已经封装好的视频框架
     implementation 'cn.jzvd:jiaozivideoplayer:7.4.2'

@@ -8,10 +8,18 @@ package com.hc.common.widget
  *
  */
 
+
 import android.view.MenuItem
 import androidx.core.view.forEachIndexed
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.bottomnavigation.BottomNavigationView
+
+
+/**
+ * Created by hcw  on 2021/7/10
+ * 类描述：
+ * all rights reserved
+ */
 
 
 /*

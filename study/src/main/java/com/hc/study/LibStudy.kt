@@ -18,6 +18,13 @@ import org.koin.core.parameter.parametersOf
 import org.koin.dsl.bind
 import org.koin.dsl.module
 
+import org.koin.dsl.module
+
+/**
+ * Created by hcw  on 2021/7/10
+ * 类描述：
+ * all rights reserved
+ */
 /*
 * 依赖注入管理 study的module
 * */
@@ -38,5 +45,6 @@ val moduleStudy = module {
     single { StudyResource(get()) } bind IStudyResource::class
 
     viewModel { StudyViewModel(get()) }
+
 
 }
