@@ -32,6 +32,7 @@ import kotlin.onFailure
 * 主页的Fragment
 * 传入了R.layout.fragment_course之后就不用写onCreateView,因为布局已经被关联到fragment里了
 * */
+//test
 class HomeFragment : BaseFragment() {
 
     private val adapter: HomeAdapter = HomeAdapter()
