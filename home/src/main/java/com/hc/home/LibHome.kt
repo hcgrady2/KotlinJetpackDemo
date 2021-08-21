@@ -3,8 +3,16 @@ package com.hc.home
 import com.hc.common.network.KtRetrofit
 import com.hc.common.utils.getBaseHost
 import com.hc.home.net.HomeService
+import com.hc.home.repo.HomeResource
+import com.hc.home.repo.IHomeResource
+import com.hc.home.ui.HomeViewModel
 import org.koin.core.parameter.parametersOf
+import org.koin.dsl.bind
 import org.koin.dsl.module
+import org.koin.androidx.viewmodel.dsl.viewModel
+import org.koin.dsl.bind
+import org.koin.dsl.module
+
 
 /**
  * Created by hcw  on 2021/7/10
@@ -28,8 +36,8 @@ val moduleHome = module {
     }
 
     //repo IMineResource
-   // single { HomeResource(get()) } bind IHomeResource::class
+    single { HomeResource(get()) } bind IHomeResource::class
 
-    //viewModel { HomeViewModel(get()) }
+    viewModel { HomeViewModel(get()) }
 
 }

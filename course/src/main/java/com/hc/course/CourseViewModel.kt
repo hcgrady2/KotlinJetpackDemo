@@ -6,6 +6,7 @@ import androidx.paging.cachedIn
 import com.hc.common.base.BaseViewModel
 import com.hc.course.net.CourseListRsp
 import com.hc.course.net.CourseTypes
+import com.hc.course.repo.ICourseResource
 import com.hc.course.ui.CourseRecycAdapter
 
 /**

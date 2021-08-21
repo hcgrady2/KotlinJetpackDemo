@@ -11,6 +11,7 @@ package com.hc.course
 import androidx.lifecycle.ViewModel
 import com.hc.common.base.BaseViewModel
 import com.hc.course.net.CourseDetails
+import com.hc.course.repo.ICourseResource
 
 class PlayVideoViewModel(val service: ICourseResource): BaseViewModel() {
 

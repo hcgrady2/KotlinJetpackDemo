@@ -1,4 +1,4 @@
-package com.hc.course
+package com.hc.course.repo
 
 import androidx.lifecycle.LiveData
 import androidx.paging.PagingData
@@ -10,10 +10,11 @@ import kotlinx.coroutines.flow.Flow
 /**
  *
  * @author:        Created by hc
- * @date:          Create in 14:36 2021/8/1
+ * @date:          Create in 15:58 2021/8/21
  * @description:
  *
  */
+
 interface ICourseResource {
 
     val liveCourseType: LiveData<CourseTypes?>

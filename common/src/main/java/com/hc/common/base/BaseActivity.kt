@@ -8,13 +8,12 @@ import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import com.blankj.utilcode.util.LogUtils
-import com.hc.common.ktx.viewLifeCycleOwner
-
+import com.hc.common.ktx.bindView
 
 /**
  * 简单封装的基类Activity
  * */
-abstract class BaseActivity<ActivityBinding:ViewDataBinding> : AppCompatActivity  {
+abstract class BaseActivity<ActBinding:ViewDataBinding> : AppCompatActivity  {
     /**
      * 无参构造函数
      */
@@ -29,19 +28,14 @@ abstract class BaseActivity<ActivityBinding:ViewDataBinding> : AppCompatActivity
 
 
    // protected  var mBinding: ViewDataBinding?=null
-     protected  lateinit var mBinding: ActivityBinding
+     protected  lateinit var mBinding: ActBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        mBinding= DataBindingUtil.setContentView(this@BaseActivity,getLayoutRes())
-        mBinding.also {
-            it?.lifecycleOwner=this@BaseActivity.viewLifeCycleOwner
-        }
-
+        mBinding = bindView<ActBinding>(getLayoutRes())
         initView()
         initConfig()
         initData()
-     }
-
+    }
 
 
     @LayoutRes
@@ -88,13 +82,13 @@ abstract class BaseActivity<ActivityBinding:ViewDataBinding> : AppCompatActivity
      * block: (T?) -> Unit 是个高阶函数 代码块
      */
 
-    protected  inline fun <T:Any> LiveData<T>.observeKt(crossinline block: (T?) -> Unit){
-      //this@BaseActivity 是LifecycleOwner的实现子类
-       this.observe(this@BaseActivity.viewLifeCycleOwner, Observer { data->
-          //  block(data) 同理
-           block.invoke(data)
-       })
-
+    /*
+    * 扩展liveData的observer函数
+    * */
+    protected inline fun <T: Any?> LiveData<T>.observerKt(crossinline block:(T?) -> Unit) {
+        this.observe(this@BaseActivity, Observer { data ->
+            block(data)
+        })
     }
 
 }

@@ -1,19 +1,11 @@
 package com.hc.course.net
 
-/**
- *
- * @author:        Created by hc
- * @date:          Create in 14:38 2021/8/1
- * @description:
- *
- */
-
 import android.annotation.SuppressLint
 import android.os.Parcelable
 import androidx.annotation.Keep
 
 import com.google.gson.annotations.SerializedName
-import kotlinx.android.parcel.Parcelize
+import kotlinx.parcelize.Parcelize
 
 
 /*
