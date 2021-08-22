@@ -30,11 +30,12 @@ val moduleLogin: Module = module {
     //         .getService(LoginService::class.java)
     // }
 
+    //实例化
     single {
         get<KtRetrofit> { parametersOf(getBaseHost()) }.getService(LoginService::class.java)
     }
 
-    //repo ILoginResource
+    //repo ILoginResource，必须 Bind
     single { LoginRepo(get()) } bind ILoginResource::class
 
     //viewModel

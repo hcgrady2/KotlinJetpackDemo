@@ -106,9 +106,9 @@ todo:
 
 
 
-
 ### 三、登录模块
-#### 1、navigation & bottomNavigation + viewPager2
+
+
 
 
 
@@ -134,6 +134,20 @@ todo:
 ### todo
 libXXX.kt 配置的作用 & 数据管理类的作用
 
+internal  & suspend
+
+koin
+
+
+R.()?
+
+契约关系、契约类
+
+inline
+
+crossinline
+
+
 
 ### 其他
 #### 1、BaseActivity 的 封装
@@ -144,5 +158,7 @@ libXXX.kt 配置的作用 & 数据管理类的作用
 #### 2、这个 demo 也是模块化的，看一下另外的两个示例，是否有更新
 通过 debug 文件夹来实现的，变量不同，独立运行和作为模块，最终 as 显示的图标不一样。
 manifest 放到了 src 下面。
+
+
 
 

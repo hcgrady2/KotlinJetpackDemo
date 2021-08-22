@@ -17,6 +17,7 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 @Route(path = "/login/login")
 class LoginActivity : BaseActivity<ActivityLoginBinding>() {
 
+    //这是 koin 里面的，因此需要初始化 koin
     private val viewModel: LoginViewModel by viewModel()
 
     override fun getLayoutRes() = R.layout.activity_login
@@ -43,11 +44,16 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>() {
 
         //在UI里观察两个请求的返回结果
         viewModel.apply {
+
+
+            //扩展函数
             liveRegisterRsp.observerKt {
                 if (it?.is_register == RegisterRsp.FLAG_IS_REGISTERED) {
                     repoLogin() //登录请求
                 }
             }
+
+
             liveLoginRsp.observerKt {
                 it.also {
                     //将数据保存到数据库里
@@ -58,6 +64,8 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>() {
                 //关闭Activity
                 finish()
             }
+
+
         }
 
     }

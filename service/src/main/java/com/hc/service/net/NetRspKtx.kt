@@ -87,7 +87,7 @@ inline fun <reified T> BaseResponse.onBizOK(crossinline action: (code: Int, data
 * */
 @OptIn(ExperimentalContracts::class)
 inline fun <R> DataResult<R>.onSuccess(action: R.() -> Unit): DataResult<R> {
-    //契约关系
+    //契约关系,契约关系，会进行状态判断
     contract {
         callsInPlace(action, InvocationKind.AT_MOST_ONCE) //最多走一次
     }

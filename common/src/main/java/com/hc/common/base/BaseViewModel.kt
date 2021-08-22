@@ -23,8 +23,7 @@ abstract  class BaseViewModel: ViewModel() {
     /**
      * 协程 网络请求
      */
-
-
+    //= ，相当于，代码块里面执行 launch 函数。addTo 是扩展函数。协程添加到列表里面。
    protected  fun serverAwait(block:suspend CoroutineScope.() ->Unit)=viewModelScope.launch {
         isLoading.value=true
         block.invoke(this)
