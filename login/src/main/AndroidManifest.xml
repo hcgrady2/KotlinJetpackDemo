@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hc.login">
+    package="com.hc.kotlinjetpackdemo.login">
+    <application>
+        <activity android:name="login.ui.LoginActivity"
+            android:launchMode="singleTop">
+        </activity>
+    </application>
 
 </manifest>

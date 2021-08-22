@@ -16,7 +16,7 @@ import com.hc.login.repo.ILoginResource
  *
  */
 
-class LoginViewModel(private val resource: ILoginResource): BaseViewModel() {
+public class LoginViewModel(private val resource: ILoginResource): BaseViewModel() {
 
     /*
     * ObservableField只有在数据发生改变时UI才会收到通知，而LiveData不同，只要你postValue或者setValue，UI都会收到通知，不管数据有无变化
