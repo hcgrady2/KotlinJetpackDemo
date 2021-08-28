@@ -112,7 +112,14 @@ todo:
 
 
 
+
 ### 四、个人中心
+#### 1、组合控件开发
+db形式封装，和绑定。
+
+
+
+
 
 
 ### 五、学习中心
@@ -146,6 +153,20 @@ R.()?
 inline
 
 crossinline
+
+
+
+login & mine 下 debug 的文件夹是怎么处理的，manifest 是如何动态替换的。
+
+
+
+之前绑定图片报错，是在 BindingApc 中 imgSrcCompat  处理了。
+
+
+
+三种图片库：
+joke，xx，kt 对比，详细测试。
+
 
 
 

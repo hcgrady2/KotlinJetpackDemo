@@ -95,7 +95,7 @@ class ItemSettingsView @JvmOverloads constructor(
      * 设置title
      */
     fun setTitle(title: String) {
-        itemBean.title = title
+        itemBean.title = title?:""
         // obItemInfo.notifyChange()
     }
 
