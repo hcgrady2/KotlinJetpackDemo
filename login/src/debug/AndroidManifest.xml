@@ -4,22 +4,22 @@
     <!--网络权限-->
     <uses-permission android:name="android.permission.INTERNET"/>
 
-    <application
-        android:name="com.hc.login.LoginApplication"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/modelu_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:theme="@style/CommonTheme">
-        <activity
-            android:name="login.ui.LoginActivity"
-            android:label="@string/modelu_name"
-            android:launchMode="singleTop">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--    <application-->
+<!--        android:name="com.hc.login.LoginApplication"-->
+<!--        android:icon="@mipmap/ic_launcher"-->
+<!--        android:label="@string/modelu_name"-->
+<!--        android:roundIcon="@mipmap/ic_launcher_round"-->
+<!--        android:theme="@style/CommonTheme">-->
+<!--        <activity-->
+<!--            android:name="login.ui.LoginActivity"-->
+<!--            android:label="@string/modelu_name"-->
+<!--            android:launchMode="singleTop">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+<!--    </application>-->
 
 </manifest>

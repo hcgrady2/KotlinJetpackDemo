@@ -2,26 +2,26 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hc.mine">
 
-    <!--网络权限-->
-    <uses-permission android:name="android.permission.INTERNET"/>
+<!--    &lt;!&ndash;网络权限&ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.INTERNET"/>-->
 
-    <application
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/module_mine"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:theme="@style/AppTheme"
-        >
-        <!--launchMode="singleTop"栈顶如果有activity实例则不会新建-->
-        <activity
-            android:name="com.hc.mine.MineActivity"
-            android:launchMode="singleTop"
-            android:label="@string/module_mine">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--    <application-->
+<!--        android:icon="@mipmap/ic_launcher"-->
+<!--        android:label="@string/module_mine"-->
+<!--        android:roundIcon="@mipmap/ic_launcher_round"-->
+<!--        android:theme="@style/AppTheme"-->
+<!--        >-->
+<!--        &lt;!&ndash;launchMode="singleTop"栈顶如果有activity实例则不会新建&ndash;&gt;-->
+<!--        <activity-->
+<!--            android:name="com.hc.mine.MineActivity"-->
+<!--            android:launchMode="singleTop"-->
+<!--            android:label="@string/module_mine">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+<!--    </application>-->
 
 </manifest>
