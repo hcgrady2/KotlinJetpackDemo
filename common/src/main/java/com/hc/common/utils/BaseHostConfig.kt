@@ -31,7 +31,7 @@ fun getBaseHost(): String {
 }
 
 /**
- * 更新配置host
+ * 更新配置host,选择 host ，放到 sp 里面了？
  */
 fun setBaseHost(host: String) {
     CniaoSpUtils.put(SP_KEY_BASE_HOST, host)

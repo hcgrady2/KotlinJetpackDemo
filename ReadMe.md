@@ -117,10 +117,23 @@ todo:
 #### 1、组合控件开发
 db形式封装，和绑定。
 
+todo:
+登录功能实现，另一个 demo 是可以，然后看一下另外两个库是否有更新。
+
+关键点：
+网络请求 - databinding -> 数据库 - > navigraph 跳转 userInfo 
 
 
+全局 host 的替换：
+放到 common 里面去，通过拦截器来实现，需要看一下另一个项目如何实现的,是否必须冷启动生效？
+目前这个项目，不需要重启，那么逻辑是什么？
+
++ baseHostConfig
+
+每个 libXXX module 中配置 host
 
 
+还缺少 HostIntercept
 
 
 
@@ -175,10 +188,10 @@ koin 学习。
 
 
 
+
+
 ### 其他
 #### 1、BaseActivity 的 封装
-
-
 
 
 #### 2、这个 demo 也是模块化的，看一下另外的两个示例，是否有更新
@@ -186,5 +199,9 @@ koin 学习。
 manifest 放到了 src 下面。
 
 
+
+
+todo：
+中秋之前，把所有视频完成。
 
 

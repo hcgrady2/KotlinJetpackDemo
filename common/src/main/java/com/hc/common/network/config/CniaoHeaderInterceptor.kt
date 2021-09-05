@@ -57,6 +57,7 @@ class CniaoHeaderInterceptor : Interceptor {
                attachHeaders.add("token" to localToken)
            }*/
 
+        //拦截 token
         val localToken = SPStaticUtils.getString(SP_KEY_USER_TOKEN, originRequest.header("token"))?:"tokenNull"
         if (localToken.isNotEmpty()) {
             attachHeaders.add("token" to localToken)

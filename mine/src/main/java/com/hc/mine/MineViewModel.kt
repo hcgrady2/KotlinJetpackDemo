@@ -15,7 +15,7 @@ import com.hc.mine.repo.IMineResource
  */
 
 /*
-* Mine模块的viewModel
+* Mine模块的viewModel，需要关联 Resource
 * */
 class MineViewModel(private val repo: IMineResource): BaseViewModel() {
 

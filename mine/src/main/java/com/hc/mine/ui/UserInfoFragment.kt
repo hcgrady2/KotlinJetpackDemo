@@ -31,6 +31,8 @@ class UserInfoFragment : BaseFragment() {
 
     override fun bindView(view: View, savedInstanceState: Bundle?) =
         FragmentUserInfoBinding.bind(view).apply {
+            //todo，这个功能研究一下
+
             //toolbar返回上个界面
             //toolbar.setupWithNavController(findNavController())
             toolbar.setNavigationOnClickListener { findNavController().navigateUp() }

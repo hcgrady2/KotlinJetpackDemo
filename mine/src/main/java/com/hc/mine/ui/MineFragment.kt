@@ -57,6 +57,7 @@ class MineFragment : BaseFragment() {
                 //点击的时候赋值以免拿到空值
                 val info = viewModel.liveInfoRsp.value
                 info?.let {
+                    //这个 action 可以自动生成的
                     val action = MineFragmentDirections.actionMineFragmentToUserInfoFragment(info)
                     findNavController().navigate(action)
                 }
@@ -102,6 +103,7 @@ class MineFragment : BaseFragment() {
         }
     }
 
+    //todo，这个数据库逻辑需要看一下
     override fun initData() {
         super.initData()
         //登录成功后会跳转到Mine这个界面，然后去获取数据库里的数据
