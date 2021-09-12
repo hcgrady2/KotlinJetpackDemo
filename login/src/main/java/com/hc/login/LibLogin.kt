@@ -1,5 +1,6 @@
 package com.hc.login
 
+import com.blankj.utilcode.util.LogUtils
 import com.hc.common.network.KtRetrofit
 import com.hc.common.utils.getBaseHost
 import com.hc.login.net.LoginService
@@ -30,8 +31,12 @@ val moduleLogin: Module = module {
     //         .getService(LoginService::class.java)
     // }
 
+
+
     //实例化
     single {
+        LogUtils.e("获取的 baseURl " + getBaseHost() )
+
         get<KtRetrofit> { parametersOf(getBaseHost()) }.getService(LoginService::class.java)
     }
 

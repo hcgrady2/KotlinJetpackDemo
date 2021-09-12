@@ -41,7 +41,20 @@ fun setBaseHost(host: String) {
 //配置host的key
 private const val SP_KEY_BASE_HOST = "sp_key_base_host"
 
-//不同的baseHost，这里演示，所以都写一样的了，
-const val HOST_DEV = "https://course.api.cniao5.com/"//开发环境下的host配置
-const val HOST_QA = "https://course.api.cniao5.com/"//qa环境的host配置
-const val HOST_PRODUCT = "https://course.api.cniao5.com/"//正式配置host
+////不同的baseHost，这里演示，所以都写一样的了，
+//const val HOST_DEV = "https://course.api.cniao5.com/"//开发环境下的host配置
+//const val HOST_QA = "https://course.api.cniao5.com/"//qa环境的host配置
+//const val HOST_PRODUCT = "https://course.api.cniao5.com/"//正式配置host
+
+//
+///*
+//* 更新配置host
+//* */
+//fun setBaseHost(host: String) {
+//    MySpUtils.put(SP_KEY_BASE_HOST, host)
+//}
+
+//不同的baseHost
+const val HOST_DEV = "http://yapi.54yct.com/mock/24/2" //开发环境下的host配置
+const val HOST_QA = "http://yapi.54yct.com/mock/24/1" //QA环境下的host配置
+const val HOST_PRODUCT = "http://yapi.54yct.com/mock/24/" //正式环境下的host配置(默认)

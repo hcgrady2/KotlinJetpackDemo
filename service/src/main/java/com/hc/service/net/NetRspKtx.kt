@@ -44,6 +44,8 @@ inline fun <reified T> BaseResponse.toEntity(): T? {
         // } else if (data is JsonArray) {
         //     return GsonUtils.fromJson(Gson())
         // }
+        LogUtils.e("返回结果： $data")
+
         GsonUtils.fromJson(Gson().toJson(data), T::class.java)
     }.onFailure { e ->
         e.printStackTrace() //Catch出错，报错

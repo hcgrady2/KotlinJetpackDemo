@@ -30,6 +30,9 @@ class LoginRepo(private val service: LoginService) : ILoginResource{
 
     //校验是否注册 网络请求
     override suspend fun checkRegister(mobi: String) {
+
+        //LogUtils.e("是否注册 接口异常 ${i}")
+
         service.isRegister(mobi)
             .serverData()
             .onSuccess {
