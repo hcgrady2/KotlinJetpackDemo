@@ -147,7 +147,11 @@ class StudyItemPagingSource(val service: StudyService) : PagingSource<Int, Studi
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, StudiedRsp.Data> {
         var result: LoadResult<Int, StudiedRsp.Data> =
             LoadResult.Error(Exception("加载中..."))
+
+        //下一页
         var firstPage = params.key ?: 1
+
+
         service.getStudyList(firstPage, params.loadSize) //初始化加载数量
             .serverData()
             .onSuccess {
@@ -166,11 +170,15 @@ class StudyItemPagingSource(val service: StudyService) : PagingSource<Int, Studi
                         // Log.d("yyy","课程列表到底啦")
                         null
                     }
+
+                    //成功
                     result = LoadResult.Page<Int, StudiedRsp.Data>(
                         data?.datas ?: emptyList(), //如果datas为空就回传一个空的只读列表
                         null,
                         nextPage
                     )
+
+
                 }
             }
             .onFailure {

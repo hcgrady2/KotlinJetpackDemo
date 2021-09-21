@@ -134,12 +134,17 @@ todo:
 
 每个 libXXX module 中配置 host
 
-
 还缺少 HostIntercept
 
 
-
 ### 五、学习中心
+paging3 源码分析：
+NumberProgressBar
+
+
+
+
+
 
 
 ### 六、课程中心
@@ -186,6 +191,9 @@ joke，xx，kt 对比，详细测试。
 
 
 koin 学习。
+
+
+把现在的项目，对照源码，跑起来。
 
 
 

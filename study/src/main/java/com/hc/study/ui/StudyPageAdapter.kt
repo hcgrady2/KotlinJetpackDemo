@@ -29,6 +29,8 @@ class StudyPageAdapter : PagingDataAdapter<StudiedRsp.Data, StudiedVH>(differCal
     //用于区分是不是相同的数据
     companion object {
         private val differCallback = object : DiffUtil.ItemCallback<StudiedRsp.Data>() {
+
+            //是否是一样的 item
             override fun areItemsTheSame(
                 oldItem: StudiedRsp.Data,
                 newItem: StudiedRsp.Data
