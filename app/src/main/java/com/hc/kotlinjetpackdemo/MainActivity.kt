@@ -9,7 +9,8 @@ import com.hc.course.ui.CourseFragment
 import com.hc.home.ui.HomeFragment
 import com.hc.kotlinjetpackdemo.databinding.ActivityMainBinding
 import com.hc.mine.MineContainerFragment
-import com.hc.mystudy.MyStudyFragment
+import com.hc.kotlinjetpackdemo.ui.MyStudyFragment
+import com.hc.kotlinjetpackdemo.ui.topheadline.TopHeadlineFragment
 import com.hc.study.ui.StudyFragment
 
 
@@ -24,7 +25,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     //将索引值和fragment做一个关系映射
     //将Fragment改为ReFragment，  此时Fragment UI不可见就销毁，但保存数据
     private val fragments = mapOf<Int, ReFragment>(
-        INDEX_MY_STUDY to {MyStudyFragment()},
+        INDEX_MY_STUDY to { MyStudyFragment() },
         INDEX_HOME to { HomeFragment() },
         INDEX_COURSE to { CourseFragment() },
         INDEX_STUDY to { StudyFragment() },

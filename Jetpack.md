@@ -64,8 +64,9 @@ liveData.map{
 ### 五、Lifecycle
 
 
- 
-
+### 六、mvvm
+https://amitshekhar.me/blog/mvvm-architecture-android
+https://blog.mindorks.com/using-retrofit-with-kotlin-coroutines-in-android/
 
  
 

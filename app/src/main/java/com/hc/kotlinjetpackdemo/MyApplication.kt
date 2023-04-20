@@ -5,6 +5,8 @@ import com.hc.common.BaseApplication
 import com.hc.common.ktx.application
 import com.hc.course.moduleCourse
 import com.hc.home.moduleHome
+import com.hc.kotlinjetpackdemo.di.component.ApplicationComponent
+import com.hc.kotlinjetpackdemo.di.component.DaggerApplicationComponent
 import com.hc.login.moduleLogin
 import com.hc.mine.moduleMine
 import com.hc.service.assistant.AssistantApp
@@ -35,6 +37,19 @@ class MyApplication : BaseApplication() {
 
         //初始化Arouter框架
         ARouter.init(application)
+
+
+        injectDependencies()
+
+    }
+    lateinit var applicationComponent: ApplicationComponent
+
+    private fun injectDependencies() {
+        applicationComponent = DaggerApplicationComponent
+            .builder()
+            .applicationModule(ApplicationModule(this))
+            .build()
+        applicationComponent.inject(this)
     }
 
 }

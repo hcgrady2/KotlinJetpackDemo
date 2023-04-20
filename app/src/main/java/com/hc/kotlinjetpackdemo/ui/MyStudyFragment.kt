@@ -1,11 +1,12 @@
-package com.hc.mystudy
+package com.hc.kotlinjetpackdemo.ui
 
 import android.os.Bundle
 import android.view.View
 import androidx.databinding.ViewDataBinding
-import com.google.android.material.tabs.TabLayout
 import com.hc.common.base.BaseFragment
-import com.hc.mystudy.databinding.FragmentMystudyMainBinding
+import com.hc.kotlinjetpackdemo.R
+import com.hc.kotlinjetpackdemo.databinding.FragmentMystudyMainBinding
+import com.hc.kotlinjetpackdemo.databinding.FragmentMystudyMainStudyBinding
 
 /**
  * @Author: wanghaichao
@@ -15,8 +16,8 @@ import com.hc.mystudy.databinding.FragmentMystudyMainBinding
  */
 class MyStudyFragment:BaseFragment() {
     override fun bindView(view: View, savedInstanceState: Bundle?): ViewDataBinding {
-        return FragmentMystudyMainBinding.bind(view)
+        return FragmentMystudyMainStudyBinding.bind(view)
     }
 
-    override fun getLayoutRes() = R.layout.fragment_mystudy_main
+    override fun getLayoutRes() = R.layout.fragment_mystudy_main_study
 }

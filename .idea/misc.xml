@@ -12,6 +12,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="MyStudy/src/main/res/layout/fragment_mystudy_main.xml" value="0.2828125" />
+        <entry key="MyStudy/src/main/res/layout/top_headline_item_layout.xml" value="0.5630208333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.13698284561049445" />
+        <entry key="app/src/main/res/layout/fragment_mystudy_main.xml" value="0.5640625" />
+        <entry key="app/src/main/res/layout/top_headline_item_layout.xml" value="0.5520169851380042" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.21944444444444444" />
+        <entry key="course/src/main/res/layout/fragment_course.xml" value="0.27320887991927345" />
       </map>
     </option>
   </component>
