@@ -14,7 +14,6 @@ import javax.inject.Singleton
  * @Description:
  * @Copyright: all rights reserved.
  */
-@Singleton
 interface NetworkService {
 
     @Headers("X-Api-Key: $API_KEY")

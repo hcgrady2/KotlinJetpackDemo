@@ -18,7 +18,6 @@ import com.hc.kotlinjetpackdemo.ui.retrofit.RetrofitMainActivity
  * @Copyright: all rights reserved.
  */
 class MyStudyFragment:BaseFragment() {
-    lateinit var btnRetrofitDemo:Button
     override fun bindView(view: View, savedInstanceState: Bundle?): ViewDataBinding {
         return FragmentMystudyMainStudyBinding.bind(view).apply {
             btnRetrofitDemo.setOnClickListener {
@@ -32,6 +31,5 @@ class MyStudyFragment:BaseFragment() {
 
     override fun initData() {
         super.initData()
-        btnRetrofitDemo
     }
 }

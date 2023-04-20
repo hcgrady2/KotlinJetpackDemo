@@ -1,7 +1,6 @@
 package com.hc.kotlinjetpackdemo.di.component
 
 import com.hc.kotlinjetpackdemo.di.ActivityScope
-import com.hc.kotlinjetpackdemo.di.module.ActivityModule
 import com.hc.kotlinjetpackdemo.ui.topheadline.TopHeadlineActivity
 import dagger.Component
 
@@ -11,10 +10,10 @@ import dagger.Component
  * @Description:
  * @Copyright: all rights reserved.
  */
-@ActivityScope
-@Component(dependencies = [ApplicationComponent::class], modules = [ActivityModule::class])
-interface ActivityComponent {
-
-    fun inject(activity: TopHeadlineActivity)
-
-}
+//@ActivityScope
+//@Component(dependencies = [ApplicationComponent::class], modules = [ActivityModule::class])
+//interface ActivityComponent {
+//
+//    fun inject(activity: TopHeadlineActivity)
+//
+//}

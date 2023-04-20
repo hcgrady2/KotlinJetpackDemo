@@ -14,8 +14,7 @@ import javax.inject.Singleton
  * @Description:
  * @Copyright: all rights reserved.
  */
-@Singleton
-class TopHeadlineRepository @Inject constructor(private val networkService: NetworkService) {
+class TopHeadlineRepository constructor(private val networkService: NetworkService) {
 
     fun getTopHeadlines(country: String): Flow<List<Article>> {
         return flow {

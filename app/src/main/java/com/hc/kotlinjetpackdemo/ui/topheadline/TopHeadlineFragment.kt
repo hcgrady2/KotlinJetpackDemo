@@ -15,8 +15,6 @@ import com.hc.kotlinjetpackdemo.MyApplication
 import com.hc.kotlinjetpackdemo.R
 import com.hc.kotlinjetpackdemo.data.model.Article
 import com.hc.kotlinjetpackdemo.databinding.FragmentMystudyMainBinding
-import com.hc.kotlinjetpackdemo.di.component.DaggerActivityComponent
-import com.hc.kotlinjetpackdemo.di.module.ActivityModule
 import com.hc.kotlinjetpackdemo.ui.base.UiState
 import com.hc.study.databinding.FragmentStudyBinding
 import kotlinx.coroutines.launch
@@ -30,10 +28,10 @@ import javax.inject.Inject
  */
 class TopHeadlineFragment:BaseFragment() {
 
-    @Inject
+   // @Inject
     lateinit var topHeadlineViewModel: TopHeadlineViewModel
 
-    @Inject
+  //  @Inject
     lateinit var adapter: TopHeadlineAdapter
 
     private lateinit var binding: FragmentMystudyMainBinding

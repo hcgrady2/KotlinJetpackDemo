@@ -12,9 +12,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.hc.kotlinjetpackdemo.MyApplication
 import com.hc.kotlinjetpackdemo.data.model.Article
 import com.hc.kotlinjetpackdemo.databinding.FragmentMystudyMainBinding
-import com.hc.kotlinjetpackdemo.di.component.ActivityComponent
-import com.hc.kotlinjetpackdemo.di.component.DaggerActivityComponent
-import com.hc.kotlinjetpackdemo.di.module.ActivityModule
 import com.hc.kotlinjetpackdemo.ui.base.UiState
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -27,16 +24,16 @@ import javax.inject.Inject
  */
 class TopHeadlineActivity : AppCompatActivity() {
 
-    @Inject
+   // @Inject
     lateinit var topHeadlineViewModel: TopHeadlineViewModel
 
-    @Inject
+   // @Inject
     lateinit var adapter: TopHeadlineAdapter
 
     private lateinit var binding: FragmentMystudyMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        injectDependencies()
+     //   injectDependencies()
         super.onCreate(savedInstanceState)
         binding = FragmentMystudyMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -87,10 +84,10 @@ class TopHeadlineActivity : AppCompatActivity() {
         adapter.notifyDataSetChanged()
     }
 
-    private fun injectDependencies() {
-        DaggerActivityComponent.builder()
-            .applicationComponent((application as MyApplication).applicationComponent)
-            .activityModule(ActivityModule(this)).build().inject(this)
-    }
+//    private fun injectDependencies() {
+//        DaggerActivityComponent.builder()
+//            .applicationComponent((application as MyApplication).applicationComponent)
+//            .activityModule(ActivityModule(this)).build().inject(this)
+//    }
 
 }

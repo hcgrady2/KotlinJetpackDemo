@@ -11,7 +11,6 @@ import kotlin.reflect.KClass
  * @Description:
  * @Copyright: all rights reserved.
  */
-@Singleton
 class ViewModelProviderFactory<T : ViewModel>(
     private val kClass: KClass<T>,
     private val creator: () -> T
