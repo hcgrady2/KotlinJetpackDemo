@@ -21,7 +21,7 @@ buildscript {
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.2"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
         //这个插件可以自动生成帮助类，然后其他 module 需要 apply safeargs.kotlin
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigation_version"
         //koin注入框架
