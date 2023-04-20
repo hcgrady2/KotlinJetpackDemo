@@ -28,6 +28,8 @@
         </activity>
 
         <activity android:name=".ui.topheadline.TopHeadlineActivity"/>
+
+        <activity android:name=".ui.retrofit.RetrofitMainActivity"/>
     </application>
 
 </manifest>
