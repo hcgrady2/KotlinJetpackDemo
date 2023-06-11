@@ -35,6 +35,19 @@ class MyApplication : BaseApplication() {
 
         //初始化Arouter框架
         ARouter.init(application)
+
+
+    //    injectDependencies()
+
     }
+  //  lateinit var applicationComponent: ApplicationComponent
+
+//    private fun injectDependencies() {
+//        applicationComponent = DaggerApplicationComponent
+//            .builder()
+//            .applicationModule(ApplicationModule(this))
+//            .build()
+//        applicationComponent.inject(this)
+//    }
 
 }

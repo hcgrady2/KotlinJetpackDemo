@@ -9,6 +9,8 @@ import com.hc.course.ui.CourseFragment
 import com.hc.home.ui.HomeFragment
 import com.hc.kotlinjetpackdemo.databinding.ActivityMainBinding
 import com.hc.mine.MineContainerFragment
+import com.hc.kotlinjetpackdemo.ui.MyStudyFragment
+import com.hc.kotlinjetpackdemo.ui.topheadline.TopHeadlineFragment
 import com.hc.study.ui.StudyFragment
 
 
@@ -23,6 +25,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     //将索引值和fragment做一个关系映射
     //将Fragment改为ReFragment，  此时Fragment UI不可见就销毁，但保存数据
     private val fragments = mapOf<Int, ReFragment>(
+        INDEX_MY_STUDY to { MyStudyFragment() },
         INDEX_HOME to { HomeFragment() },
         INDEX_COURSE to { CourseFragment() },
         INDEX_STUDY to { StudyFragment() },
@@ -52,10 +55,11 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
     //定义一些抽象的常量
     companion object {
-        const val INDEX_HOME = 0 //首页home对应的索引位置
-        const val INDEX_COURSE = 1 //课程course对应的索引位置
-        const val INDEX_STUDY = 2 //学习中心study对应的索引位置
-        const val INDEX_MINE = 3 //我的mine对应的索引位置
+        const val INDEX_MY_STUDY = 0 //我自己的学习 Demo
+        const val INDEX_HOME = 1 //首页home对应的索引位置
+        const val INDEX_COURSE = 2 //课程course对应的索引位置
+        const val INDEX_STUDY = 3 //学习中心study对应的索引位置
+        const val INDEX_MINE = 4 //我的mine对应的索引位置
     }
 
 }

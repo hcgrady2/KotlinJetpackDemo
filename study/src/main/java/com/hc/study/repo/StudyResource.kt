@@ -140,7 +140,6 @@ class StudyItemPagingSource(val service: StudyService) : PagingSource<Int, Studi
     * 如果您的应用程序需要支持从网络增量加载到本地数据库，则必须为从用户的滚动位置锚点开始的恢复分页提供支持
     * 先从本地数据库加载数据，然后在数据库用完数据后从网络加载数据
     * */
-    @ExperimentalPagingApi
     override fun getRefreshKey(state: PagingState<Int, StudiedRsp.Data>): Int? = null
 
     //用这个方法来触发异步加载

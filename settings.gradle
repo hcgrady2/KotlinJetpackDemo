@@ -7,3 +7,4 @@ include ':app'
 rootProject.name = "KotlinJetpackDemo"
 include ':login'
 include ':service'
+include ':MyStudy'

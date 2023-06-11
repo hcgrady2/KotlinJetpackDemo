@@ -210,16 +210,8 @@ koin 学习。
 
 ### 其他
 #### 1、BaseActivity 的 封装
-
-
-#### 2、这个 demo 也是模块化的，看一下另外的两个示例，是否有更新
-通过 debug 文件夹来实现的，变量不同，独立运行和作为模块，最终 as 显示的图标不一样。
-manifest 放到了 src 下面。
-
-
-
-
-todo：
-中秋之前，把所有视频完成。
-
-
+todo:
+1、cn5 工程学习，模块，mvvm
+2、mvvm structrue 
+3、kt retrofit stuture
+4、api mock 工具，wanandroid
