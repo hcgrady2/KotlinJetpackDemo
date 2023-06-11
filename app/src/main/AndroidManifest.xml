@@ -6,15 +6,16 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_app"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:name=".MyApplication"
         android:supportsRtl="true"
         android:theme="@style/CommonTheme"
         tools:replace="android:label,android:name"
         android:usesCleartextTraffic="true"
-        tools:targetApi="m">
+        tools:targetApi="m"
+
+        >
 
         <activity
             android:name=".MainActivity"
