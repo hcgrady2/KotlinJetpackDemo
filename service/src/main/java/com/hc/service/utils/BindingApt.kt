@@ -17,7 +17,7 @@ import com.hc.service.R
 * app:srcCompat的DataBinding扩展
 * imageView支持图片加载 绑定
 * */
-@BindingAdapter("app:srcCompat", requireAll = false)
+@BindingAdapter("srcCompat", requireAll = false)
 fun imgSrcCompat(iv: ImageView, src: Any?) {
     //如果src为空，设置默认图片
     // val imgRes = src ?: R.drawable.icon_default_header
@@ -41,7 +41,7 @@ fun imgSrcCompat(iv: ImageView, src: Any?) {
 /**
  * 图片资源支持tint颜色修改，支持colorRes和colorInt形式
  */
-@BindingAdapter("app:tint")
+@BindingAdapter("tint")
 fun imgColor(iv: ImageView, color: Int) {
     if (color == 0) return
     runCatching {

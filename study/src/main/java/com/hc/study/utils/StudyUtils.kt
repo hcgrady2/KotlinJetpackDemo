@@ -68,7 +68,7 @@ object StudyUtils {
 /*
 * //NumberProgressBar扩展函数 将传来的progress*100转化为百分比形式 并且支持databinding加载
 * */
-@BindingAdapter("app:progress_current", requireAll = false)
+@BindingAdapter("progress_current", requireAll = false)
 fun setProgress(pb: NumberProgressBar, progress: Double?) {
     pb.progress = ((progress ?: 0.0) * 100).toInt() //*100，转化为百分比显示
 }

@@ -215,3 +215,7 @@ todo:
 2、mvvm structrue 
 3、kt retrofit stuture
 4、api mock 工具，wanandroid
+
+
+#### 其他
+java 版本，gradle 版本，项目使用 java 版本，compile 版本，target 版本
