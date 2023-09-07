@@ -15,5 +15,13 @@
             android:layout_width="match_parent"
             android:text="retrofit demo"
             android:layout_height="wrap_content"/>
+
+        <Button
+            app:layout_constraintTop_toBottomOf="@id/btn_retrofit_demo"
+            android:text="网络请求"
+            android:id="@+id/btn_net_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

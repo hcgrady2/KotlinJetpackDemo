@@ -9,6 +9,7 @@ import com.hc.common.base.BaseFragment
 import com.hc.kotlinjetpackdemo.R
 import com.hc.kotlinjetpackdemo.databinding.FragmentMystudyMainBinding
 import com.hc.kotlinjetpackdemo.databinding.FragmentMystudyMainStudyBinding
+import com.hc.kotlinjetpackdemo.limitDemo.LimitDemoActivity
 import com.hc.kotlinjetpackdemo.ui.retrofit.RetrofitMainActivity
 
 /**
@@ -22,6 +23,9 @@ class MyStudyFragment:BaseFragment() {
         return FragmentMystudyMainStudyBinding.bind(view).apply {
             btnRetrofitDemo.setOnClickListener {
                 startActivity(Intent(context,RetrofitMainActivity::class.java))
+            }
+            btnNetRequest.setOnClickListener {
+                startActivity(Intent(context,LimitDemoActivity::class.java))
             }
         }
     }
